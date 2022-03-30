@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
+:root {
+    --primary-text-color: #35434B;
+    font-size: 16px;
+    --sec-text-color :#14425B;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(180.38deg, #C3D7E2 13.52%, rgba(100, 148, 114, 0.3) 71.72%, rgba(148, 117, 100, 0.49) 107.88%) no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-weatherifier{
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.bg-weatherifier a{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--primary-text-color) !important;
+}
+
+.search-input{
+    border: none !important;
+    border-radius: 0px !important;
+    background: rgba(255, 255, 255, 0.75) url(../images/search-icon.png) no-repeat scroll 92% 50%;
+    background-size: 16px 16px;
+    color: #938D8D;
+    outline: none;
+    padding-right: 30px;
+    font-size: 14px;
+}
+
+div.main-container{
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 10px;
+}
+
+h1.city{
+    margin: 0;
+    color: var(--primary-text-color);
+}
+
+h2.country{
+    margin: 0;
+    color: var(--primary-text-color);
+}
+
+.hr{
+    width:80%;
+    margin: auto;
+    border: 2px solid #EBEBEB
+}
+
+.time-date{
+    background: rgba(149, 200, 236, 0.12);
+    border-radius: 20px;
+    padding: 10px 10px 20px 20px;
+}
+
+img.time-icon, img.date-icon{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.time-date .time .hour{
+    font-size: 72px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    color: var(--primary-text-color);
+}
+
+.time-date .time .mins{
+    font-size: 24px;
+    font-weight: 100;
+    color: var(--primary-text-color);
+}
+
+.time-date .time .period{
+    font-size: 24px;
+    color: var(--primary-text-color);
+    font-weight: 100;
+}
+
+.time-date .date .date-text{
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+}
+
+.weather-cond-title{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+.weather-type{
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--sec-text-color);
+}
+
+.img-weather{
+    width: 80px;
+    height: 80px;
+}
+
+.rain-chances{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+
+.rain-chances span{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--sec-text-color);
+}
+
+.snow-chances{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+.snow-chances span{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--sec-text-color);
+}
+
+.temp-title{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+.temp-text{
+    font-size: 56px;
+    font-weight: 100;
+    color: var(--sec-text-color);
+    padding: 0px;
+    margin: 0px;
+}
+
+.temp-deg{
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #938D8D;
+}
+
+.temp-unit{
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #938D8D;
+}
+
+.wind-title{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+.wind-text{
+    font-size: 56px;
+    font-weight: 100;
+    color: var(--sec-text-color);
+    padding: 0px;
+    margin: 0px;
+}
+
+.wind-unit{
+    font-size: 14px;
+    font-weight: 300;
+    color: #938D8D;
+    padding-top: 10px;
+}
+
+.card{
+    background: rgba(176, 231, 178, 0.15);
+    border: none;
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--primary-text-color);
+}
+
+.card-img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2px;
+}
+
+.card-text{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--sec-text-color);
+    margin-bottom: 2px;
+}
