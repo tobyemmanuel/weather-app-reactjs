@@ -13,7 +13,8 @@ const api = {
 }
 
 function App() {
-  const [dLocation, setDLocation] = useState('');
+  const [dLocation, setDLocation] = useState('London');
+  const [defaultLocation, setDefault] = useState(true);
   const [WeatherValues, setWeatherValues] = useState({});
 
 
@@ -24,9 +25,23 @@ function App() {
   const submittedLocation = (event) => {
     if(event.key === 'Enter'){
       event.preventDefault();
-      console.log(dLocation)
+      fetchData();
     }
   }
+
+  const fetchData = () => {
+    fetch(`${api.API_URL}?key=${api.API_KEY}&q=${dLocation}&days=${api.API_DAY_DATA}`)
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+}
+
+  useEffect(() => {
+        if(defaultLocation == true){
+           fetchData();
+           //console.log('Yes')
+        }
+        setDefault(false);
+  })
 
   return (
     <div className="weather-app-body">
