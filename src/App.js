@@ -19,13 +19,18 @@ function App() {
 
 
   const onChangeLocation = (event) => {
-    setDLocation(event.target.value)
+    var newLocation = event.target.value;
+    setDLocation(newLocation);
+   // 
   }
 
   const submittedLocation = (event) => {
     if(event.key === 'Enter'){
       event.preventDefault();
-      fetchData();
+      if(dLocation.length > 2){  fetchData();  }else{
+        alert('Please insert a valid location.')
+      }
+     
     }
   }
 
